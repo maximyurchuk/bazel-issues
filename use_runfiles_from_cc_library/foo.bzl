@@ -1,6 +1,8 @@
 
 def _impl(ctx):
-    return DefaultInfo(files = ctx.attr.input[DefaultInfo].data_runfiles.files)
+    files = ctx.attr.input[DefaultInfo].data_runfiles.files
+    print(files)
+    return DefaultInfo(files = files)
     
   
 

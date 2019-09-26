@@ -3,14 +3,13 @@ https://github.com/bazelbuild/bazel/issues/4561
 ### Output
 
 ```
-c:\git\bazel-issues\use_runfiles_from_cc_library>bazel-latest build ...
-INFO: Analyzed 2 targets (13 packages loaded, 71 targets configured).
+DEBUG: C:/git/bazel-issues/use_runfiles_from_cc_library/foo.bzl:4:5: depset([<generated file lib.dll>])
+INFO: Analyzed 2 targets (1 packages loaded, 3 targets configured).
 INFO: Found 2 targets...
-INFO: Deleting stale sandbox base C:/users/yurchuk/_bazel_yurchuk/62bm573u/sandbox
 ERROR: C:/git/bazel-issues/use_runfiles_from_cc_library/BUILD:5:1: output 'lib.if.lib' was not created
 ERROR: C:/git/bazel-issues/use_runfiles_from_cc_library/BUILD:5:1: not all outputs were created or valid
-INFO: Elapsed time: 5.843s, Critical Path: 0.37s
-INFO: 3 processes: 3 local.
+INFO: Elapsed time: 0.954s, Critical Path: 0.21s
+INFO: 1 process: 1 local.
 FAILED: Build did NOT complete successfully
 ```
 
