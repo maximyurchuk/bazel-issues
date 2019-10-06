@@ -1,3 +1,5 @@
+`MyAspectProvider` is missing in `target[MyProvider].dep`, but exists in `ctx.rule.attr.dep`.
+
 bazel-discuss thread: https://groups.google.com/forum/?nomobile=true#!topic/bazel-discuss/ZYH_-L_gDYI
 
 ### Output
