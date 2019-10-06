@@ -1,4 +1,4 @@
-
+bazel-discuss thread: https://groups.google.com/forum/?nomobile=true#!topic/bazel-discuss/ZYH_-L_gDYI
 
 ### Output
 
