@@ -1,6 +1,7 @@
 package(default_visibility = ["//visibility:public"])
 
 cc_library(
-    name = "include",
-    includes = ["."],
-)
+	name = "lib",
+	srcs = ["lib.cc"],
+	deps = ["//interface_lib"],
+) 
