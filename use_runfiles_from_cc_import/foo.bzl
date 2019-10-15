@@ -1,7 +1,12 @@
 
 def _impl(ctx):
     files = ctx.attr.input[DefaultInfo]
-    print("Runfiles in target {}: {}".format(ctx.label.name, files.data_runfiles.files))
+    print("Data runfiles in target {}: {}".format(ctx.label.name, files.data_runfiles.files))
+    if hasattr(files, "runfiles"):
+        print("Runfiles in target {}: {}".format(ctx.label.name, files.runfiles.files))
+    else: 
+        print("No runfiles in target {}".format(ctx.label.name))
+    
     
   
 
